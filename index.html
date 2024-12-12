@@ -1,9 +1,276 @@
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="index.css" />
-    <title>Siyaset Kulübü</title>
-  </head>
-  <body>asdadasdasd</body>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Siyaset Platformu</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="./content/style/style.css">
+</head>
+
+<body>
+
+    <header>
+        <a href="#" class="header-logo">
+            <img src="./content/images/siyaset-platformu-logo.png" alt="">
+        </a>
+        <ul class="header-part">
+            <li><a href="#aboutus">Hakkımızda</a></li>
+            <li><a href="#events">Etkinlikler</a></li>
+            <li><a href="#announcements">Duyurular</a></li>
+        </ul>
+        <ul class="header-part">
+            <li><a href="#board">Yönetim Kurulu</a></li>
+            <li><a href="#">İletişim</a></li>
+        </ul>
+    </header>
+
+    <section class="head-slider">
+        <div class="swiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <a href="#" class="slider">
+                        <div class="slider-image"><img src="./content/images/slider-1.jpg" alt=""></div>
+                        <div class="slider-details">
+                            <div class="slider-category">ETKİNLİK</div>
+                            <div class="slider-title">Genel Kurul</div>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Inventore rem eum perspiciatis enim libero optio! Magnam quae corrupti enim, eligendi, modi dolor hic laboriosam incidunt aspernatur at commodi distinctio similique?</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="#" class="slider">
+                        <div class="slider-image"><img src="./content/images/slider-1.jpg" alt=""></div>
+                        <div class="slider-details">
+                            <div class="slider-category">DUYURU</div>
+                            <div class="slider-title">Genel Kurul</div>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Inventore rem eum perspiciatis enim libero optio! Magnam quae corrupti enim, eligendi, modi dolor hic laboriosam incidunt aspernatur at commodi distinctio similique?</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="#" class="slider">
+                        <div class="slider-image"><img src="./content/images/slider-1.jpg" alt=""></div>
+                        <div class="slider-details">
+                            <div class="slider-category">HABER</div>
+                            <div class="slider-title">Genel Kurul</div>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Inventore rem eum perspiciatis enim libero optio! Magnam quae corrupti enim, eligendi, modi dolor hic laboriosam incidunt aspernatur at commodi distinctio similique?</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        </div>
+
+        <script>
+            const swiper = new Swiper('.swiper', {
+                direction: 'horizontal',
+                loop: true,
+
+                pagination: {
+                    el: '.swiper-pagination',
+                },
+
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
+                },
+            });
+        </script>
+    </section>
+
+    <main>
+        <section class="aboutus-section" id="aboutus">
+            <div class="section-title">HAKKIMIZDA</div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt, delectus magnam quod officia repellendus
+                voluptates eum? Veniam dicta, consequatur aliquid vitae quasi consectetur temporibus provident, voluptate
+                aut, corporis quam quidem!</p>
+        </section>
+    
+        <section class="mission-vision-section">
+            <div class="mission-section">
+                <div class="section-title">MİSYONUMUZ</div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt, delectus magnam quod officia repellendus
+                    voluptates eum? Veniam dicta, consequatur aliquid vitae quasi consectetur temporibus provident,
+                    voluptate aut, corporis quam quidem!</p>
+            </div>
+            <div class="vision-section">
+                <div class="section-title">VİZYONUMUZ</div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt, delectus magnam quod officia repellendus
+                    voluptates eum? Veniam dicta, consequatur aliquid vitae quasi consectetur temporibus provident,
+                    voluptate aut, corporis quam quidem!</p>
+            </div>
+        </section>
+
+
+        <section class="events-section" id="events">
+            <div class="section-header">
+                <div class="section-title">ETKİNLİKLER</div>
+                <a href="#">Tümünü Gör <i class="bi bi-arrow-right-short"></i></a>
+            </div>
+            <div class="events">
+                <div class="event">
+                    <div class="event-image"><img src="./content/images/slider-1.jpg" alt=""></div>
+                    <div class="event-details">
+                        <div class="event-title">Genel Kurul</div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A labore aspernatur</p>
+                    </div>
+                </div> 
+                <div class="event">
+                    <div class="event-image"><img src="./content/images/slider-1.jpg" alt=""></div>
+                    <div class="event-details">
+                        <div class="event-title">Genel Kurul</div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A labore aspernatur</p>
+                    </div>
+                </div> 
+                <div class="event">
+                    <div class="event-image"><img src="./content/images/slider-1.jpg" alt=""></div>
+                    <div class="event-details">
+                        <div class="event-title">Genel Kurul</div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A labore aspernatur</p>
+                    </div>
+                </div>  
+            </div>
+        </section>
+
+
+        <section class="events-section" id="announcements">
+            <div class="section-header">
+                <div class="section-title">DUYURULAR</div>
+                <a href="#">Tümünü Gör <i class="bi bi-arrow-right-short"></i></a>
+            </div>
+            <div class="events">
+                <div class="event">
+                    <div class="event-image"><img src="./content/images/slider-1.jpg" alt=""></div>
+                    <div class="event-details">
+                        <div class="event-title">Genel Kurul</div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A labore aspernatur</p>
+                    </div>
+                </div> 
+                <div class="event">
+                    <div class="event-image"><img src="./content/images/slider-1.jpg" alt=""></div>
+                    <div class="event-details">
+                        <div class="event-title">Genel Kurul</div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A labore aspernatur</p>
+                    </div>
+                </div> 
+                <div class="event">
+                    <div class="event-image"><img src="./content/images/slider-1.jpg" alt=""></div>
+                    <div class="event-details">
+                        <div class="event-title">Genel Kurul</div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A labore aspernatur</p>
+                    </div>
+                </div>  
+            </div>
+        </section>
+
+
+        
+
+
+        <section class="events-section" id="board">
+            <div class="section-header">
+                <div class="section-title">YÖNETİM KURULU</div>
+                <a href="#">Tümünü Gör <i class="bi bi-arrow-right-short"></i></a>
+            </div>
+            <div class="board-members">
+                <div class="board-member">
+                    <div class="board-member-profile"><img src="./content/images/siyaset-platformu-logo.png" alt=""></div>
+                    <div class="board-member-details">
+                        <div class="board-member-name">Mustafa Eren</div>
+                        <div class="board-member-title">Başkan</div>
+                        <div class="board-member-socials">
+                            <a href="#"><i class="bi bi-linkedin"></i></a>
+                            <a href="#"><i class="bi bi-envelope"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="board-member">
+                    <div class="board-member-profile"><img src="./content/images/siyaset-platformu-logo.png" alt=""></div>
+                    <div class="board-member-details">
+                        <div class="board-member-name">Mustafa Eren</div>
+                        <div class="board-member-title">Başkan</div>
+                        <div class="board-member-socials">
+                            <a href="#"><i class="bi bi-linkedin"></i></a>
+                            <a href="#"><i class="bi bi-envelope"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="board-member">
+                    <div class="board-member-profile"><img src="./content/images/siyaset-platformu-logo.png" alt=""></div>
+                    <div class="board-member-details">
+                        <div class="board-member-name">Mustafa Eren</div>
+                        <div class="board-member-title">Başkan</div>
+                        <div class="board-member-socials">
+                            <a href="#"><i class="bi bi-linkedin"></i></a>
+                            <a href="#"><i class="bi bi-envelope"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="board-member">
+                    <div class="board-member-profile"><img src="./content/images/siyaset-platformu-logo.png" alt=""></div>
+                    <div class="board-member-details">
+                        <div class="board-member-name">Mustafa Eren</div>
+                        <div class="board-member-title">Başkan</div>
+                        <div class="board-member-socials">
+                            <a href="#"><i class="bi bi-linkedin"></i></a>
+                            <a href="#"><i class="bi bi-envelope"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="board-member">
+                    <div class="board-member-profile"><img src="./content/images/siyaset-platformu-logo.png" alt=""></div>
+                    <div class="board-member-details">
+                        <div class="board-member-name">Mustafa Eren</div>
+                        <div class="board-member-title">Başkan</div>
+                        <div class="board-member-socials">
+                            <a href="#"><i class="bi bi-linkedin"></i></a>
+                            <a href="#"><i class="bi bi-envelope"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="board-member">
+                    <div class="board-member-profile"><img src="./content/images/siyaset-platformu-logo.png" alt=""></div>
+                    <div class="board-member-details">
+                        <div class="board-member-name">Mustafa Eren</div>
+                        <div class="board-member-title">Başkan</div>
+                        <div class="board-member-socials">
+                            <a href="#"><i class="bi bi-linkedin"></i></a>
+                            <a href="#"><i class="bi bi-envelope"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+    <footer>
+        <div class="footer-logo"><img src="./content/images/siyaset-platformu-logo.png" alt=""></div>
+        <div class="footer-content">
+            <div class="footer-copyright">Bu web site <a target="_blank" href="#">Seymen Özdeş</a>, <a target="_blank" href="https://meren.com.tr">Mustafa Eren</a> ve <a target="_blank" href="#">Sude Küçükyavuz</a> tarafından geliştirildi.</div>
+            <div class="footer-socials">
+                <a href="#" target="_blank"><i class="bi bi-linkedin"></i></a>
+                <a href="#" target="_blank"><i class="bi bi-twitter-x"></i></a>
+                <a href="#" target="_blank"><i class="bi bi-youtube"></i></a>
+                <a href="#" target="_blank"><i class="bi bi-instagram"></i></a>
+                <a href="#" target="_blank"><i class="bi bi-facebook"></i></a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
 </html>
